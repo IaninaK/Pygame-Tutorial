@@ -1,3 +1,4 @@
+#lesson 1
 import pygame
 pygame.init()
 
