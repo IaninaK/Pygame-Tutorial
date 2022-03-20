@@ -17,7 +17,8 @@ BLUE = (0, 0, 255)
 
 x = W // 2
 y = H // 2
-speed = 5
+Xspeed = 5
+Yspeed = 5
 
 while True:
     for event in pygame.event.get():
@@ -27,9 +28,13 @@ while True:
     keys = pygame.key.get_pressed()
 
     if keys[pygame.K_LEFT]:
-        x -= speed
+        x -= Xspeed
     elif keys[pygame.K_RIGHT]:
-        x += speed
+        x += Xspeed
+    elif keys[pygame.K_UP]:
+        y -= Yspeed
+    elif keys[pygame.K_DOWN]:
+        y += Yspeed
     
 
     sc.fill(WHITE)
